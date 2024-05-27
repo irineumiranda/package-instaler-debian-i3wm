@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo apt install bash-completion git wget zip unzip file-roller ffmpeg apt-transport-https curl dkms ncdu p7zip-full htop nitrogen arandr
