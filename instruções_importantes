@@ -1,0 +1,15 @@
+1 - Ative a permissão de execução nos scripts Pacotes_essenciais_do_sistema, Pacotes_interface_grafica_do_sistema, numlock e firmware_install.sh
+
+ Ex: sudo chmod +x "nome do script" sem apas
+
+2 - O script numlock é para resolver o problema do teclado não funcionar no modo console. Copie o arquivo para /local/bin
+
+Ex: cp /usr/local/bin/numlock
+
+3 - O script numlock.service é para carregar o serviço no systemd na inicialização do sistema. Copie o arquivo para /systemd/system
+
+EX: cp /etc/systemd/system/numlock.service
+
+4 - Ative o serviço numlock.service
+
+E: systemctl enable numlock.service
