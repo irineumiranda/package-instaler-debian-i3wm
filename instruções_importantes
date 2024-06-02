@@ -2,14 +2,22 @@
 
  Ex: sudo chmod +x "nome do script" sem apas
 
-2 - O script numlock é para resolver o problema do teclado não funcionar no modo console. Copie o arquivo para /local/bin
+2 - Ative o serviço do Network Manager, pacote instalado dos scripts a cima
 
-Ex: cp /usr/local/bin/numlock
+ Ex: sudo systemctl enable NetworkManager.service
 
-3 - O script numlock.service é para carregar o serviço no systemd na inicialização do sistema. Copie o arquivo para /systemd/system
+3 - Verifique se o NetworkManager.service esta rodando
 
-EX: cp /etc/systemd/system/numlock.service
+ Ex: systemctl status NetworkManager
 
-4 - Ative o serviço numlock.service
+4 - O script numlock é para resolver o problema do teclado não funcionar no modo console. Copie o arquivo para /local/bin
 
-E: systemctl enable numlock.service
+ Ex: cp /usr/local/bin/numlock
+
+5 - O script numlock.service é para carregar o serviço no systemd na inicialização do sistema. Copie o arquivo para /systemd/system
+
+ EX: cp /etc/systemd/system/numlock.service
+
+6 - Ative o serviço numlock.service
+
+ Ex: systemctl enable numlock.service
