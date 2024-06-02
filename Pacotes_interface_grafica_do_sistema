@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo apt install i3-wm i3blocks i3status i3lock xfce4-terminal xfce4-panel xfce4-pulseaudio-plugin xfce4-datetime-plugin network-manager network-manager-gnome thunar dmenu xdg-utils neofetch 
+sudo apt install i3-wm i3blocks i3status i3lock xfce4-terminal xfce4-panel xfce4-pulseaudio-plugin xfce4-datetime-plugin xfce4-battery-plugin network-manager network-manager-gnome thunar dmenu xdg-utils neofetch 
